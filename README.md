@@ -5,3 +5,5 @@
 # 2. class=filter: this is going to apply the style
 # 3. data=[array to populate the filter choices]: this array is a part of the parent $scope. i.e.: data="Years"
 # 4. control=[a class that's in the <td> tag]: this tells the directive which column to control. i.e.: <td class="year">
+
+# To see the demo, load the files into a web server.
