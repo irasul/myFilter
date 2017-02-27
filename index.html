@@ -1,0 +1,27 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="myFilter.js"></script>
+<link rel="stylesheet" href="myFilter.css"/>
+
+<div ng-app='app' ng-controller='mainCtrl'>
+	<table>
+		<thead>
+			<th>
+				<div class="filter" title="Year" data="years" control="year" my-Filter></div>
+			</th>
+			<th>
+				<div class="filter" title="Month" data="months" control="month" my-Filter></div>
+			</th>
+			<th>
+				Day
+			</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat='d in sampleData track by $index'>
+				<td class="year" ng-bind="d.Year"></td>
+				<td class="month" ng-bind="d.Month"></td>
+				<td class="day" ng-bind="d.Day"></td>				
+			</tr>	
+		<tbody>
+	</table>
+</div>

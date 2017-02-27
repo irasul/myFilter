@@ -1,0 +1,12 @@
+<a ng-click="showFilters($event)">{{title}}</a>
+<div class="options">
+	<input ng-model="srchFilter" class="form-control srchFilter" placeholder="Search {{title}}" ng-change="searchList(this)">	
+	<div class="options_holder">
+		<div class="checkbox ng-hide" ng-repeat="r in ary track by $index" ng-show="aryShow[$index]">
+			<label>
+				<input type="checkbox" name="{{title}}Filter" type="checkbox" ng-value="r"  checked="checked" control="{{control}}" onchange="filter_x_0_1(this)"/><span ng-bind="r"></span> 
+			</label>
+		</div>
+	</div>	
+		Select <a ng-click="selectAll()">All</a> | <a ng-click="selectNone()">None</a> <a class="btn btn-xs btn-default pull-right" style="margin-top:10px" ng-click="hideFilters($event)">Done</a>
+</div>

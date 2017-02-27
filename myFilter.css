@@ -1,0 +1,45 @@
+.filter>a:after{
+	content:" ";
+	border-width:7px;
+	border-color:#ddd transparent transparent transparent;
+	margin-top:7px;
+	margin-left:5px;
+	border-style:solid;
+	position:absolute;	
+	cursor:pointer;
+}
+.filter>a:hover,.filter>a:hover:after{color:#1e38ff}
+.filter{
+	
+	position:relative;
+}
+.filter>a{
+	color:#5a64af;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	cursor:pointer;
+}
+a{
+	cursor:pointer;
+}
+.filter>.options{
+	 display:none;
+	 width:250px;
+	 padding:10px;
+	 background-color:#fff;
+	 border:1px solid #d1d1d1;
+	 position:absolute;
+	 color:#000;
+	 box-shadow:2px -2px 4px #999;
+}
+.options_holder{
+	 max-height:400px;
+	 overflow-y:scroll;
+	 padding:5px;
+	 outline:1px #f1f1f1 solid;
+	 
+}
+
+.srchFilter{
+	margin-bottom:10px;
+}

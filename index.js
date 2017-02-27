@@ -1,0 +1,42 @@
+var app = angular.module('app',[]);
+app.controller('mainCtrl',function($scope){
+	$scope.sampleData = [
+		{Year:2015,Month:'January',Day:1},
+		{Year:2015,Month:'February',Day:2},
+		{Year:2015,Month:'March',Day:3},
+		{Year:2015,Month:'April',Day:4},
+		{Year:2015,Month:'May',Day:5},
+		{Year:2015,Month:'June',Day:6},
+		{Year:2015,Month:'July',Day:7},
+		{Year:2015,Month:'August',Day:8},
+		{Year:2015,Month:'September',Day:9},
+		{Year:2015,Month:'October',Day:10},
+		{Year:2015,Month:'November',Day:11},
+		{Year:2015,Month:'December',Day:12},
+		{Year:2016,Month:'January',Day:13},
+		{Year:2016,Month:'February',Day:14},
+		{Year:2016,Month:'March',Day:15},
+		{Year:2016,Month:'April',Day:16},
+		{Year:2016,Month:'May',Day:17},
+		{Year:2016,Month:'June',Day:18},
+		{Year:2016,Month:'July',Day:19},
+		{Year:2016,Month:'August',Day:20},
+		{Year:2016,Month:'September',Day:21},
+		{Year:2016,Month:'October',Day:22},
+		{Year:2016,Month:'November',Day:23},
+		{Year:2016,Month:'December',Day:24},
+		{Year:2017,Month:'January',Day:25},
+		{Year:2017,Month:'February',Day:26},
+		{Year:2017,Month:'March',Day:27},
+		{Year:2017,Month:'April',Day:28},
+		{Year:2017,Month:'May',Day:29},
+		{Year:2017,Month:'June',Day:30},
+		{Year:2017,Month:'July',Day:31},
+		{Year:2017,Month:'August',Day:32},
+		{Year:2017,Month:'September',Day:33},
+		{Year:2017,Month:'October',Day:34},
+		{Year:2017,Month:'November',Day:35},
+		{Year:2017,Month:'December',Day:36}
+	]
+
+});
