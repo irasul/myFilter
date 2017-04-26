@@ -1,16 +1,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="myFilter.js"></script>
 <link rel="stylesheet" href="myFilter.css"/>
-
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style type="text/css">
+	/*style for example*/
+	#tableExample td{	min-width: 100px;	}
+	#tableExample th{	background-color: #f0f0f0;border-bottom:1px solid #000;}
+	* {font-family: 'Roboto';font-weight: 400;font-size: 14px;}
+</style>
 <div ng-app='app' ng-controller='mainCtrl'>
-	<table>
+	<table id='tableExample'>
 		<thead>
 			<th>
-				<div class="filter" title="Year" data="years" control="year" my-Filter></div>
+				<div title="Year" dataset="sampleData" keys="Year" control="year" my-Filter></div>
 			</th>
 			<th>
-				<div class="filter" title="Month" data="months" control="month" my-Filter></div>
+				<div title="Month" dataset="sampleData" keys="Month" control="month" my-Filter></div>
 			</th>
 			<th>
 				Day
